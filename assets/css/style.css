@@ -1,0 +1,91 @@
+body, p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+h1, h2, h3 {
+  font-family: 'Lora', serif;
+}
+
+#services, #about, #contact{
+  scroll-margin-top: 50px
+}
+
+.social-media-icons {
+  padding: 30px; 
+}
+
+#home.hero {
+  background-image: url('../images/hero/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white; 
+  padding: 100px 20px;
+  position: relative;
+}
+
+
+#home.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); 
+  z-index: 1;
+}
+
+#home.hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.dark-section {
+  background-color: #1c1c1e; 
+  color: #f1f1f1; 
+}
+
+.dark-section h2 {
+  margin-top: 50px;
+  color: #ffffff;
+}
+
+.dark-section p {
+  color: #e0e0e0;
+}
+
+
+.dark-section p + p {
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  #home.hero {
+    padding: 80px 15px;
+    text-align: center;
+  }
+
+  #home.hero h1 {
+    font-size: 2rem;
+  }
+
+  #home.hero p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #home.hero {
+    padding: 60px 10px;
+  }
+
+  #home.hero h1 {
+    font-size: 1.5rem;
+  }
+
+  #home.hero p {
+    font-size: 1rem;
+  }
+}
