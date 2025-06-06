@@ -28,6 +28,7 @@
                 emailjs.sendForm('service_sev7t9f', 'template_jrnwfw8', this)
                     .then(() => {
                     showAlert('Message sent successfully', 'success');
+                    clearForm('contact-form');
                 }, (error) => {
                     showAlert('Error, please try again: ' + error, 'danger');
                 });
@@ -39,7 +40,13 @@
                             ${message}
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>`;
+                }
+                function clearForm(formId) {
+                  const form = document.getElementById('contact-form');
+                  if (form) {
+                      form.reset(); // Clears input, select, and textarea values
                   }
+                }
             });
         }
         
