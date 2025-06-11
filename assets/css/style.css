@@ -41,6 +41,13 @@ h1, h2, h3 {
   position: relative;
   z-index: 2;
 }
+.hero h1 {
+  white-space: nowrap;               
+  overflow: hidden;                 
+  
+  
+  font-size: clamp(1.5rem, 5vw, 3rem);
+}
 
 .dark-section {
   background-color: #1c1c1e; 
