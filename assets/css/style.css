@@ -2,6 +2,72 @@ body, p {
   font-family: 'Open Sans', sans-serif;
 }
 
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;             /* Prevent text wrapping */
+  overflow: hidden;                /* Hide overflow */
+  text-overflow: ellipsis;        /* Add ellipsis if it overflows */
+  font-size: 1.3rem;               /* Default for large screens */
+  max-width: 100%;
+}
+
+/* Very large desktops (4K+) */
+@media (min-width: 1600px) {
+  .navbar-brand {
+    font-size: 1.6rem;
+  }
+}
+
+/* Large desktops (1440px - 1600px) */
+@media (min-width: 1440px) and (max-width: 1599px) {
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+}
+
+/* Standard desktops and laptops (1025px - 1439px) */
+@media (min-width: 1025px) and (max-width: 1439px) {
+  .navbar-brand {
+    font-size: 1.4rem;
+  }
+}
+
+/* Tablets (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+}
+
+/* Small tablets and large phones (577px - 767px) */
+@media (min-width: 577px) and (max-width: 767px) {
+  .navbar-brand {
+    font-size: 1rem;
+  }
+}
+
+/* Standard phones (425px - 576px) */
+@media (min-width: 425px) and (max-width: 576px) {
+  .navbar-brand {
+    font-size: 0.9rem;
+  }
+}
+
+/* Small phones (375px - 424px) */
+@media (min-width: 375px) and (max-width: 424px) {
+  .navbar-brand {
+    font-size: 0.85rem;
+  }
+}
+
+/* Extra small phones (<375px) */
+@media (max-width: 374px) {
+  .navbar-brand {
+    font-size: 0.75rem;
+  }
+}
+
 
 h1, h2, h3 {
   font-family: 'Lora', serif;
